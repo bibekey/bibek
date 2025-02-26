@@ -1,119 +1,87 @@
-<?xml version="1.0" encoding="UTF-8"?> 
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
-  <loc>http://rajbanshibibek.com.np/resume.pdf</loc>
+  <loc>https://rajbanshibibek.com.np</loc>
+  <lastmod>2025-02-22T02:51:41+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://rajbanshibibek.com.np/about/me</loc>
+  <loc>https://rajbanshibibek.com.np/about/me</loc>
+  <lastmod>2025-02-22T02:51:41+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://rajbanshibibek.com.np/blog</loc>
+  <loc>https://rajbanshibibek.com.np/blog</loc>
+  <lastmod>2025-02-22T02:51:41+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://rajbanshibibek.com.np/index</loc>
+  <loc>https://rajbanshibibek.com.np/blog/post1</loc>
+  <lastmod>2025-02-22T02:51:41+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://rajbanshibibek.com.np/cdn-cgi/l/email-protection#c8aaaaaaaaaaa1aaada3fd88afa5a9a1a4e6aba7a5</loc>
+  <loc>https://rajbanshibibek.com.np/blog/post2</loc>
+  <lastmod>2025-02-22T02:51:41+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://rajbanshibibek.com.np/tel:+9779840976007</loc>
+  <loc>https://rajbanshibibek.com.np/blog/post3</loc>
+  <lastmod>2025-02-22T02:51:41+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://rajbanshibibek.com.np/assets/img/whggeb-1.jpg</loc>
+  <loc>https://rajbanshibibek.com.np/about/privacy-policy</loc>
+  <lastmod>2025-02-22T02:51:41+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://rajbanshibibek.com.np/assets/img/branding-2.jpg</loc>
+  <loc>https://rajbanshibibek.com.np/about/terms-&amp;-condition</loc>
+  <lastmod>2025-02-22T02:51:41+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://rajbanshibibek.com.np/assets/img/advertising-2.jpg</loc>
+  <loc>https://rajbanshibibek.com.np/blog/post4</loc>
+  <lastmod>2025-02-22T02:51:41+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://rajbanshibibek.com.np/assets/img/web-4.jpg</loc>
+  <loc>https://rajbanshibibek.com.np/blog/post5</loc>
+  <lastmod>2025-02-22T02:51:41+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://rajbanshibibek.com.np/assets/img/advertising1.jpg</loc>
+  <loc>https://rajbanshibibek.com.np/blog/post6</loc>
+  <lastmod>2025-02-22T02:51:41+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://rajbanshibibek.com.np/assets/img/web-3.jpg</loc>
+  <loc>https://rajbanshibibek.com.np/blog/post10</loc>
+  <lastmod>2025-02-22T02:51:41+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://rajbanshibibek.com.np/assets/img/advertising-3.jpg</loc>
+  <loc>https://rajbanshibibek.com.np/blog/post7</loc>
+  <lastmod>2025-02-22T02:51:41+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://rajbanshibibek.com.np/assets/img/advertising4.jpg</loc>
+  <loc>https://rajbanshibibek.com.np/blog/post8</loc>
+  <lastmod>2025-02-22T02:51:41+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://rajbanshibibek.com.np/assets/img/branding-1.jpg</loc>
+  <loc>https://rajbanshibibek.com.np/blog/post9</loc>
+  <lastmod>2025-02-22T02:51:41+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
-<url>
-  <loc>http://rajbanshibibek.com.np/assets/img/branding-4.jpg</loc>
-</url>
-<url>
-  <loc>http://rajbanshibibek.com.np/assets/img/branding-5.jpg</loc>
-</url>
-<url>
-  <loc>http://rajbanshibibek.com.np/blog/post1</loc>
-</url>
-<url>
-  <loc>http://rajbanshibibek.com.np/blog/post2</loc>
-</url>
-<url>
-  <loc>http://rajbanshibibek.com.np/blog/post3</loc>
-</url>
-<url>
-  <loc>http://rajbanshibibek.com.np/cdn-cgi/l/email-protection#bdcec8cdcdd2cfc9fdcfdcd7dfdcd3ced5d4dfd4dfd8d693ded2d093d3cd</loc>
-</url>
-<url>
-  <loc>http://rajbanshibibek.com.np/about/privacy-policy</loc>
-</url>
-<url>
-  <loc></loc>
-</url>
-<url>
-  <loc>http://rajbanshibibek.com.np/../index</loc>
-</url>
-<url>
-  <loc>http://rajbanshibibek.com.np/../blog</loc>
-</url>
-<url>
-  <loc>http://rajbanshibibek.com.np/cdn-cgi/l/email-protection</loc>
-</url>
-<url>
-  <loc>http://rajbanshibibek.com.np/../about/privacy-policy</loc>
-</url>
-<url>
-  <loc>http://rajbanshibibek.com.np/../about/terms-&-condition</loc>
-</url>
-<url>
-  <loc>http://rajbanshibibek.com.np/../about/me</loc>
-</url>
-<url>
-  <loc>http://rajbanshibibek.com.np/blog/post4</loc>
-</url>
-<url>
-  <loc>http://rajbanshibibek.com.np/blog/post5</loc>
-</url>
-<url>
-  <loc>http://rajbanshibibek.com.np/blog/post6</loc>
-</url>
-<url>
-  <loc>http://rajbanshibibek.com.np/blog/post10</loc>
-</url>
-<url>
-  <loc>http://rajbanshibibek.com.np/blog/post7</loc>
-</url>
-<url>
-  <loc>http://rajbanshibibek.com.np/blog/post8</loc>
-</url>
-<url>
-  <loc>http://rajbanshibibek.com.np/blog/post9</loc>
-</url>
-<url>
-  <loc>http://rajbanshibibek.com.np/cdn-cgi/l/email-protection#a4c6c6c6c6c6cdc6c1cf91e4c3c9c5cdc88ac7cbc9</loc>
-</url>
-<url>
-  <loc>http://rajbanshibibek.com.np/cdn-cgi/l/email-protection#3c4f494c4c534e487c4e5d565e5d524f54555e555e5957125f535112524c</loc>
-</url>
-<url>
-  <loc>http://rajbanshibibek.com.np/</loc>
-</url>
+
+
+</urlset>
