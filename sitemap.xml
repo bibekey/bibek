@@ -18,12 +18,12 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://rajbanshibibek.com.np/about/about-me</loc>
+  <loc>https://rajbanshibibek.com.np/about/me</loc>
   <lastmod>2025-02-22T02:51:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://rajbanshibibek.com.np/blog/Blog</loc>
+  <loc>https://rajbanshibibek.com.np/blog</loc>
   <lastmod>2025-02-22T02:51:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -91,16 +91,6 @@
   <loc>https://rajbanshibibek.com.np/blog/post9</loc>
   <lastmod>2025-02-22T02:51:41+00:00</lastmod>
   <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rajbanshibibek.com.np/about/error</loc>
-  <lastmod>2025-02-22T02:51:41+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://rajbanshibibek.com.np/index.html</loc>
-  <lastmod>2025-02-22T02:51:41+00:00</lastmod>
-  <priority>0.51</priority>
 </url>
 
 
