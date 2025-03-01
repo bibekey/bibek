@@ -205,27 +205,28 @@ $(document).ready(function() {
 
 
 // DROPDOWN NAVBAR =================== START
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction(dropdownId) {
-  document.getElementById(dropdownId).classList.toggle("show");
-}
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
+document.querySelectorAll('.nav-item').forEach((item) => {
+  const dropdown = item.querySelector('.dropdown-content');
+
+  if (dropdown) {
+    item.addEventListener('mouseenter', () => {
+      dropdown.classList.add('show');
+    });
+
+    item.addEventListener('mouseleave', () => {
+      setTimeout(() => {
+        if (!dropdown.matches(':hover')) {
+          dropdown.classList.remove('show');
+        }
+      }, 200);
+    });
   }
-}
+});
 
 // DROPDOWN NAVBAR =================== END
+
+
 
 
 // Detects and starts counting only when the section enters the viewport*=================== START
@@ -321,7 +322,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Select both paragraph and heading elements
     document.querySelectorAll(".text-muted, .card-title").forEach(el => observer.observe(el));
 });
-
 
   // Redirect only if the URL ends with .html
   if (window.location.pathname.endsWith(".html")) {
