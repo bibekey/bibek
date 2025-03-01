@@ -322,3 +322,8 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".text-muted, .card-title").forEach(el => observer.observe(el));
 });
 
+
+  // Redirect only if the URL ends with .html
+  if (window.location.pathname.endsWith(".html")) {
+    window.location.href = window.location.pathname.replace(".html", "/");
+  }
