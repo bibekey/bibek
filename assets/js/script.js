@@ -324,13 +324,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
-
-
-
-
-
-  
 (function () {
     const allowedHost = "rajbanshibibek.com.np"; // Your official domain
     const countdownTime = 25; // Countdown in seconds
