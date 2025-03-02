@@ -430,7 +430,18 @@ document.addEventListener("DOMContentLoaded", function () {
 })();
 
 
+document.onkeydown = function(e) {
+            if (e.keyCode == 123) { // F12
+                e.preventDefault();
+                alert("You cannot access the developer tools.");
+            } else if (e.ctrlKey && e.shiftKey && e.keyCode == 73) { // Ctrl+Shift+I
+                e.preventDefault();
+                alert("You cannot access the developer tools.");
+            }
+        };
+
   // Redirect only if the URL ends with .html
   if (window.location.pathname.endsWith(".html")) {
     window.location.href = window.location.pathname.replace(".html", "/");
   }
+  
