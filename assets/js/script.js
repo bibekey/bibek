@@ -429,6 +429,75 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 1000);
 })();
 
+// Disable Right Click
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+    alert("Right-click is disabled!");
+});
+
+// Disable Keyboard Shortcuts (F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U, Ctrl+S)
+document.onkeydown = function(event) {
+    if (event.keyCode == 123) { // F12
+        return false;
+    }
+    if (event.ctrlKey && event.shiftKey && (event.keyCode == 73 || event.keyCode == 74)) { // Ctrl+Shift+I / Ctrl+Shift+J
+        return false;
+    }
+    if (event.ctrlKey && (event.keyCode == 85 || event.keyCode == 83)) { // Ctrl+U / Ctrl+S
+        return false;
+    }
+};
+
+// Detect DevTools Open and Redirect
+(function() {
+    function detectDevTools() {
+        window.location.href = "https://rajbanshibek.com.np"; // Redirect when DevTools is detected
+    }
+
+    setInterval(function() {
+        let before = new Date().getTime();
+        debugger;
+        let after = new Date().getTime();
+        if (after - before > 100) {
+            detectDevTools();
+        }
+    }, 500);
+})();
+
+// Prevent Text Selection & Copying
+document.addEventListener('selectstart', function(event) {
+    event.preventDefault();
+});
+document.addEventListener('copy', function(event) {
+    event.preventDefault();
+    alert("Copying content is disabled!");
+});
+
+// Prevent Dragging Images
+document.addEventListener("dragstart", function(event) {
+    event.preventDefault();
+});
+
+// Anti-Inspect Console Trick
+setInterval(() => {
+    let element = new Image();
+    element.__defineGetter__('id', () => {
+        alert("DevTools is open! Closing now...");
+        window.location.reload();
+    });
+    console.log('%c', element);
+}, 1000);
+
+// Infinite Loop to Slow Down Debugging
+(function() {
+    var start = new Date();
+    debugger;
+    var end = new Date();
+    if (end - start > 100) {
+        while (true) {}
+    }
+})();
+
 
   // Redirect only if the URL ends with .html
   if (window.location.pathname.endsWith(".html")) {
