@@ -323,3 +323,111 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".text-muted, .card-title").forEach(el => observer.observe(el));
 });
 
+
+(function () {
+    const allowedHost = "rajbanshibibek.com.np"; // Your official domain
+    const countdownTime = 25; // Countdown in seconds
+    let countdown = countdownTime;
+
+    if (window.location.hostname !== allowedHost) {
+        document.body.innerHTML = `
+            <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; flex-direction: column;">
+                    <h2 style="color: red;">🚨 Uh-oh! Caught Red-Handed! In The Act, illegal Activities Detected! 🚔😂</h2>                    
+                    <p style="color: black;">Hey there, Digital Pirate! 🏴‍☠️ </p>
+                    <p style="color: black;">Nice Try, But This Content Is <strong>only</strong> for VIPs on The Official site Only!😜</p>
+                    <p style="color: black;">Don't worry, we won't call the internet police... <em>this time.</em> 👀</p>
+                    <p style="color: black;">But seriously, You’ll Be Redirected Soon, So don’t Panic! <span id="countdown">${countdown}</span> seconds.</p>
+                    <img src="https://media.giphy.com/media/xT9IgG50Fb7Mi0prBC/giphy.gif" alt="Warning GIF" width="300">
+
+            </div>
+        `;
+        
+        const countdownInterval = setInterval(() => {
+            countdown--;
+            document.getElementById("countdown").textContent = countdown;
+            
+            if (countdown <= 0) {
+                clearInterval(countdownInterval);
+                window.location.href = "https://" + allowedHost;
+            }
+        }, 1000); // Update countdown every second
+    }
+
+    // Disable Right Click
+    document.addEventListener("contextmenu", function (event) {
+        event.preventDefault();
+    });
+
+    // Disable Keyboard Shortcuts
+    document.addEventListener("keydown", function (event) {
+        if (event.ctrlKey && (event.key === "U" || event.key === "u")) {
+            event.preventDefault();
+        }
+        if (event.ctrlKey && event.shiftKey && (event.key === "I" || event.key === "i")) {
+            event.preventDefault();
+        }
+        if (event.key === "F12") {
+            event.preventDefault();
+        }
+        if (event.ctrlKey && event.shiftKey && (event.key === "J" || event.key === "j")) {
+            event.preventDefault();
+        }
+    });
+
+    // Detect Chrome DevTools and Block It
+    setInterval(function () {
+        const devtools = /./;
+        devtools.toString = function () {
+            throw new Error("DevTools Blocked!");
+        };
+        console.log(devtools);
+    }, 1000);
+
+    // Close Tab If DevTools Is Open
+    (function () {
+        let devtoolsOpen = false;
+        const threshold = 160;
+
+        setInterval(() => {
+            const widthDiff = window.outerWidth - window.innerWidth > threshold;
+            const heightDiff = window.outerHeight - window.innerHeight > threshold;
+
+            if (widthDiff || heightDiff) {
+                devtoolsOpen = true;
+                document.body.innerHTML = "<h1>Inspecting is not allowed!</h1>";
+                setTimeout(() => {
+                    window.close(); // Close the browser tab
+                }, 2000);
+            }
+        }, 1000);
+    })();
+
+    // Disable Console Debugging
+    function blockConsole() {
+        console.log = function () {};
+        console.warn = function () {};
+        console.error = function () {};
+        console.info = function () {};
+        console.debug = function () {};
+    }
+
+    blockConsole();
+
+    setInterval(function () {
+        if (window.console && (console.profile || console.clear)) {
+            console.clear();
+            console.log("Console disabled!");
+            blockConsole();
+        }
+    }, 1000);
+})();
+
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    alert("Right-click disabled.");
+});
+
+  // Redirect only if the URL ends with .html
+  if (window.location.pathname.endsWith(".html")) {
+    window.location.href = window.location.pathname.replace(".html", "/");
+  }
