@@ -856,7 +856,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
    
    
    
-   
+   <script>
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            alert('Right-click is disabled on this site.');
+        });
+    </script>
+
    
    
    

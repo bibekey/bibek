@@ -429,10 +429,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 1000);
 })();
 
-document.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
-    alert("Right-click disabled.");
-});
 
   // Redirect only if the URL ends with .html
   if (window.location.pathname.endsWith(".html")) {
