@@ -331,34 +331,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   
-(function () {
-    const allowedHost = "rajbanshibibek.com.np"; // Your official domain
-    const countdownTime = 25; // Countdown in seconds
-    let countdown = countdownTime;
-
-    if (window.location.hostname !== allowedHost) {
-        document.body.innerHTML = `
-            <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; flex-direction: column;">
-                    <h2 style="color: red;">🚨 Uh-oh! Caught Red-Handed! In The Act, illegal Activities Detected! 🚔😂</h2>                    
-                    <p style="color: black;">Hey there, Digital Pirate! 🏴‍☠️ </p>
-                    <p style="color: black;">Nice Try, But This Content Is <strong>only</strong> for VIPs on The Official site Only!😜</p>
-                    <p style="color: black;">Don't worry, we won't call the internet police... <em>this time.</em> 👀</p>
-                    <p style="color: black;">But seriously, You’ll Be Redirected Soon, So don’t Panic! <span id="countdown">${countdown}</span> seconds.</p>
-                    <img src="https://media.giphy.com/media/xT9IgG50Fb7Mi0prBC/giphy.gif" alt="Warning GIF" width="300">
-
-            </div>
-        `;
-        
-        const countdownInterval = setInterval(() => {
-            countdown--;
-            document.getElementById("countdown").textContent = countdown;
-            
-            if (countdown <= 0) {
-                clearInterval(countdownInterval);
-                window.location.href = "https://" + allowedHost;
-            }
-        }, 1000); // Update countdown every second
-    }
 
     // Disable Right Click
     document.addEventListener("contextmenu", function (event) {
