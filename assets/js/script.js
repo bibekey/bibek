@@ -10,32 +10,6 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-
-document.addEventListener("DOMContentLoaded", function () {
-  const navbarToggler = document.querySelector(".navbar-toggler");
-  const navbarCollapse = document.querySelector("#navbarSupportedContent");
-  
-  // Open menu
-  navbarToggler.addEventListener("click", function () {
-    navbarCollapse.classList.toggle("show");
-  });
-  
-  // Close menu when clicking outside
-  document.addEventListener("click", function (event) {
-    if (!navbarCollapse.contains(event.target) && !navbarToggler.contains(event.target)) {
-      navbarCollapse.classList.remove("show");
-    }
-  });
-
-  // Handle dropdown functionality
-  function myFunction(dropdownId) {
-    document.getElementById(dropdownId).classList.toggle("show");
-  }
-  
-  window.myFunction = myFunction; // Expose function globally for inline onclick
-});
-
-
 // smooth scroll
 $(document).ready(function(){
     $(".navbar .nav-link").on('click', function(event) {
