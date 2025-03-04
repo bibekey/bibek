@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tools & Software</title>
+    <title>Ebooks & Guides</title>
     <meta name="description" content="Learn more about Bibek Rajbanshi, a skilled digital marketer, web designer, and SEO expert dedicated to helping businesses grow online with innovative strategies and solutions.">
     <meta name="keywords" content="About Bibek Rajbanshi, digital marketing expert, web design professional, SEO services, marketing strategies, digital marketing Nepal, web development Nepal, professional digital marketer, Web design portfolio, Social media marketing, AI in digital marketing">
     <meta name="author" content="Bibek Rajbanshi">
@@ -107,7 +107,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         
         
              <!--  BREADCRUMB ACTIVE----------------------START -->
-<ul class="breadcrumb"><li><a href="index">Home</a> &raquo; </li><li>Tools & Software</li></ul>
+<ul class="breadcrumb"><li><a href="index">Home</a> &raquo; </li><li>Partnership</li></ul>
     <!--  BREADCRUMB ACTIVE----------------------END -->
     <div class="container">
                 <div class="blog-card">
@@ -116,16 +116,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     
                     
     
-<!--BLOG POST ---------------------------START-->                 
+    <!--BLOG POST ---------------------------START-->                 
 <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial, sans-serif;
-    }
-
-    h1 {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        h1 {
             font-size: 2rem;
             font-weight: bold;
             color: #ff4500;
@@ -139,55 +139,54 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             margin-top: 20px;
         }
 
-    .btn {
-        display: inline-block;
-        margin-top: 20px;
-        padding: 12px 24px;
-        background: #ff4500;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: 0.3s;
-    }
-
-    .btn:hover {
-        background: #ff5733;
-    }
-</style>
-
-<div class="container">
-    <h1>Tools & Software Available Soon</h1>
-    <p>Get access to different types of software and tools for free! Stay tuned for the launch:</p>
-    <div class="countdown" id="countdown"></div>
-    <a href="index" class="btn">Go Home</a>
-</div>
-
-<script>
-    // Set the target date (2 months from now)
-    const targetDate = new Date();
-    targetDate.setMonth(targetDate.getMonth() + 2);  // Adds 2 months to the current date
-
-    // Update the countdown every second
-    const countdown = document.getElementById('countdown');
-    const interval = setInterval(function() {
-        const now = new Date();
-        const timeLeft = targetDate - now;
-
-        if (timeLeft <= 0) {
-            clearInterval(interval);
-            countdown.innerHTML = "The course is now live!";
-        } else {
-            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-            countdown.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: #ff4500;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
         }
-    }, 1000);
-</script>    
-<!--BLOG POST ---------------------------START-->
 
+        .btn:hover {
+            background: #ff5733;
+        }
+    </style>
+
+    <div class="container">
+        <h1>Ebooks & Guides Available Soon</h1>
+        <p>Access a collection of insightful ebooks and guides for free! Stay tuned.:</p>
+        <div class="countdown" id="countdown"></div>
+        <a href="index" class="btn">Go Home</a>
+    </div>
+
+    <script>
+        // Set the target date (30 days from now)
+        const targetDate = new Date();
+        targetDate.setDate(targetDate.getDate() + 30);
+
+        // Update the countdown every second
+        const countdown = document.getElementById('countdown');
+        const interval = setInterval(function() {
+            const now = new Date();
+            const timeLeft = targetDate - now;
+
+            if (timeLeft <= 0) {
+                clearInterval(interval);
+                countdown.innerHTML = "The course is now live!";
+            } else {
+                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+                countdown.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+            }
+        }, 1000);
+    </script>    
+       <!--BLOG POST ---------------------------START-->
    
    
    

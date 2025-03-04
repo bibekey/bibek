@@ -11820,9 +11820,69 @@ pre .code {
   font-size: 14px;
 }
 
-.footer {
+.footer.py-3 {
   background: #17263C;
+  text-align: left;
+  padding: 15px 0;
+  border-top: 1px solid grey; /* Border on top with orange color */
 }
+
+
+footer {
+  background-color: #17263C;
+  color: white;
+  padding: 40px 20px;
+}
+
+
+.column {
+  flex: 1;
+  min-width: 250px; /* Ensures responsiveness */
+  max-width: 300px;
+  text-align: left;
+  margin: 5px;
+}
+
+.social i {
+  font-size: 25px;
+  margin: 5px;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 8px 0;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.subscribe input {
+  padding: 5px;
+  width: 50%;
+  max-width: 250px;
+  border: none;
+  border-radius: 2px;
+}
+
+.subscribe button {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+
 
 /* PAGINATION [FOOTER] ========================================END*/
 

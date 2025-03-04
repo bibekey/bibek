@@ -324,6 +324,31 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+  document.getElementById("newsletter-form").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevents the default form submission
+
+    let form = this;
+    let formData = new FormData(form);
+
+    fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: {
+        "Accept": "application/json"
+      }
+    }).then(response => {
+      if (response.ok) {
+        alert("Thank you for subscribing!"); // Show success message
+        form.reset(); // Clear the form after submission
+      } else {
+        alert("Something went wrong. Please try again!");
+      }
+    }).catch(error => {
+      alert("Error submitting form. Please try again later.");
+    });
+  });
+
+
 (function () {
     const allowedHost = "rajbanshibibek.com.np"; // Your official domain
     const countdownTime = 25; // Countdown in seconds
