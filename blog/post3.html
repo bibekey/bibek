@@ -128,7 +128,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <!-- ShareThis END -->
            <p class="post-details"><img class="rounded-circle mr-2" src="../assets/img/author.jpg" width="20" height="20"> <a href="#d"> BR | </i>Dec 03, 2024</a></p>
                               
-          <img class="img-fluid" src="../assets/img/blog4.jpg" style="object-fit: cover; width: 100%;">
+          <img class="img-fluid" src="../assets/img/blog3.jpg" style="object-fit: cover; width: 100%;">
  
  
  
@@ -141,9 +141,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <div id="table-of-contents">
 <ul>
-        <li><a href="#what-is-domain">What is Domain?</a></li>
-        <li><a href="#types-of-domain">Types of Domain</a></li>
-        <li><a href="#steps-of-domain-registration">Steps of Free Nepal's Official .NP Domain Registration</a></li>
+        <li><a href="#what-is-domain">1. What is Domain?</a></li>
+        <li><a href="#types-of-domain">2. Types of Domain</a></li>
+        <li><a href="#steps-of-domain-registration">3. Steps of Free Nepal's Official .NP Domain Registration</a></li>
+        <li><a href="#coverletter">4. Generate Cover Letter</a></li>
 </ul>
 </div>
 <!-- TABLE OF CONTENTS==============END-->
@@ -295,6 +296,46 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <li>Write a formal request letter on your organization's letterhead or your personal letterhead if you are an individual.</li>
                         <li>Address the letter to Mercantile Communications Pvt. Ltd., expressing your interest in registering a .com.np domain.</li>
                         <li>Include your desired domain name in the letter and provide all necessary details such as your full name, contact information, organization details (if applicable), and purpose of the website.</li>
+                            <h3 id="coverletter"><b>Cover Letter Generator</b></h3>
+    <form id="coverLetterForm">
+        <label for="applicantName">Your Full Name:</label><br>
+        <input type="text" id="applicantName" name="applicantName" placeholder="Enter your full name">
+        <span class="error" id="nameError"></span><br>
+        
+        <label for="domainName">Your Domain Name:</label><br>
+        <input type="text" id="domainName" name="domainName" placeholder="Enter your domain name">
+        <span class="error" id="domainError"></span><br>
+        
+        <button type="button" onclick="validateAndGenerate()">Generate Cover Letter</button>
+    </form>
+
+    <div id="coverLetter" style="display: none;">
+        <p id="letterDate"></p>
+        <p><strong>To</strong><br>
+        The HostMaster<br>
+        NP ccTLD Registration Services<br>
+        Mercantile Communications Pvt. Ltd.</p>
+
+        <p><strong>Subject:</strong> <span id="letterSubject"></span></p>
+
+        <p>Dear Sir/Madam,</p>
+
+        <p>I would like to request you to register <span id="letterDomain"></span> domain under my name, <span id="letterName"></span>.</p>
+
+        <p>I have filled the registration form and have attached my Nepali citizenship and required documents along with this cover letter.</p>
+
+        <p>I will be very obliged if you kindly register my domain (<span id="letterDomain2"></span>) as soon as possible.</p>
+
+        <p>Applying for registration of the domain <span id="letterDomain3"></span> follows all the terms and conditions of domain registration residing at: <a href="https://register.com.np/terms-and-conditions" target="_blank">https://register.com.np/terms-and-conditions</a></p>
+
+        <p><strong>Your Sincerely,</strong><br>
+        <span id="letterSignature"></span></p>
+    </div>
+
+    <br>
+    <button id="downloadPDF" style="display: none;" onclick="downloadPDF()">Download as PDF</button>
+    <button id="downloadJPG" style="display: none;" onclick="downloadJPG()">Download as JPG</button>
+    
                         <p>Note: If you don't know what a Cover letter is, here is the sample <a href="#">Click here</a>.</p>
                     </ul>
                 </li>
@@ -334,6 +375,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <p>Remember to regularly renew your domain registration to keep it active and ensure uninterrupted website access. Additionally, it's always a good idea to review the registration process on the official website of Mercantile Communications or contact their support for any specific requirements or updates.</p>
         </li>
     </ol>
+
       
 <!--BLOG POST ==============================END-->                                               
                                 
@@ -344,6 +386,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="sidebar-container">
         <!-- Related Posts with Images -->
         <div class="sidebar-section">
+        
+        
+        
             <h3><strong>Related Posts</strong></h3>
             <ul>
                 <li class="related-post">
@@ -456,6 +501,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns?id=GTM-PHCBV7FM"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
 	<!-- core  -->
     <script src="../assets/bibekrb/jquery/jquery-3.4.1.js"></script>

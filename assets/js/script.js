@@ -347,6 +347,67 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+// coverlettter start
+        function validateAndGenerate() {
+            let name = document.getElementById("applicantName").value.trim();
+            let domain = document.getElementById("domainName").value.trim();
+            let nameError = document.getElementById("nameError");
+            let domainError = document.getElementById("domainError");
+            nameError.textContent = "";
+            domainError.textContent = "";
+
+            if (!name) {
+                nameError.textContent = "Please enter your full name.";
+                return;
+            }
+            if (!domain) {
+                domainError.textContent = "Please enter your domain name.";
+                return;
+            }
+
+            generateCoverLetter(name, domain);
+        }
+
+        function generateCoverLetter(name, domain) {
+            let today = new Date();
+            let formattedDate = today.toLocaleDateString('en-GB', {
+                day: '2-digit', month: 'long', year: 'numeric'
+            });
+
+            document.getElementById("letterDate").innerText = `Date: ${formattedDate}`;
+            document.getElementById("letterSubject").innerText = `Application for ${domain} Domain Registration`;
+            document.getElementById("letterDomain").innerText = domain;
+            document.getElementById("letterDomain2").innerText = domain;
+            document.getElementById("letterDomain3").innerText = domain;
+            document.getElementById("letterName").innerText = name;
+            document.getElementById("letterSignature").innerText = name;
+
+            document.getElementById("coverLetter").style.display = "block";
+            document.getElementById("downloadPDF").style.display = "inline-block";
+            document.getElementById("downloadJPG").style.display = "inline-block";
+        }
+
+        function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+            let content = document.getElementById("coverLetter").innerText;
+            doc.setFont("times", "normal");
+            doc.setFontSize(12);
+            doc.text(content, 10, 10, { maxWidth: 180 });
+            doc.save("CoverLetter.pdf");
+        }
+
+        function downloadJPG() {
+            let coverLetterDiv = document.getElementById("coverLetter");
+            html2canvas(coverLetterDiv).then(canvas => {
+                let imgData = canvas.toDataURL("image/jpeg", 0.8);
+                let a = document.createElement("a");
+                a.href = imgData;
+                a.download = "Cover_Letter.jpg";
+                a.click();
+            });
+        } // coverletter end
+
 
 (function () {
     const allowedHost = "rajbanshibibek.com.np"; // Your official domain

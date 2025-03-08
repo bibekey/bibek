@@ -84,4 +84,33 @@
             z-index: 9999;
         }
  
+         #coverLetter { 
+            max-width: 600px; 
+            margin: auto; 
+            padding: 20px; 
+            border: 1px solid #ccc; 
+            text-align: left; 
+            background: white;
+        }
+        #letterDate { 
+            text-align: right; 
+            font-weight: bold;
+        }
+        button, input {
+            padding: 10px 15px; 
+            font-size: 15px; 
+            display: block;
+        }
+        /* Button Styling */
+
+      button {
+      background: #007BFF;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      }
+        input { padding: 8px; }
+        .error { color: red; font-size: 14px; }
  
