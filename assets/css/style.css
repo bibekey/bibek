@@ -76,7 +76,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  text-align: left;
+  text-align: justify;
   background-color: #fff; /* Fallback color in case the image doesn't load */
   background-image: url("../imgs/heahder.jpg"); /* Replace with the image URL */
   background-size: cover; /* Adjusts the image to cover the entire background */
