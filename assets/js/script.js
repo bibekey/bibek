@@ -3,7 +3,6 @@
 
 * Copyright: 2023-2024 BibekRajbanshi (https://rajbanshibibek.com.np/)
 * Licensed: (https://rajbanshibibek.com.np/licenses)
-* Coded by https://rajbanshibibek.com.np/
 
 =========================================================
 
